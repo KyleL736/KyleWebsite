@@ -1,0 +1,41 @@
+
+/* Kyle Lack
+
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+a:hover 	{
+				font-weight: bold;
+			}
+
+a:visited 	{
+				color: green;
+			}
+
+ul {
+	align-self: center;
+}
+a {
+	padding-right: 100px;
+}
+
+h1, footer, nav 		{
+				text-align: center;
+				background-color: white;
+			}
+
+.name {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Damion', cursive
+}
+
+#home {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans HK', sans-serif;
+	
+}
+
+

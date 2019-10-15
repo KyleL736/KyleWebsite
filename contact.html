@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<! -- made by Kyle L.
+Date created 9/16/2019
+Date Modified 10/15/2019
+Version #1
+>
+
+<html ln="en">
+	<head>
+			<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+
+				<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+
+		<link href="css/restaurantstyles.css" rel="stylesheet" type="text/css">
+		<title>
+			Ordering Cafe | Contact Us
+		</title>
+		<style type="text/css">
+			
+			textarea {
+				resize: none;
+			}
+						
+			div {
+				padding-bottom: 5px;
+				width: auto;
+				margin: 10px;
+				align-items: center;
+			}
+						
+			form {
+				text-align: center;
+			}
+			
+			.col-4 {
+				margin: auto;
+			}
+			
+		</style>
+		<script language="javascript" type="text/javascript">
+		    document.write("");
+			function validateForm() {
+			var x = document.forms["contactForm"]["fullname"].value;
+			var y = document.forms["contactForm"]["email"].value;
+			var z = document.forms["contactForm"]["phone"].value;
+				if (x == "") {
+				alert("Name must be filled out");
+				return false;
+			  }
+					else if (y == "") {
+				alert("Email must be filled out");
+				return false;
+			  }
+					else if (z == "") {
+				alert("Phone must be filled out");
+				return false;
+			  }
+					else {
+						alert("Your information was submitted successfully!");
+				}
+			}
+
+		</script>
+		
+	</head>
+	<header>
+		<h2>Contact Us</h2>
+	</header>
+
+	<body>
+		
+		<noscript>JavaScript is off. Please enable to view full site.</noscript>
+		<hr/>
+			<h1 class="name">
+				Ordering Cafe
+			</h1>
+		<hr/>
+		
+		<ul class="nav nav-pills">
+		  <li class="nav-item">
+			<a class="nav-link" href="index.html" id="home">谷</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="menu.html">Menu</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link active" href="contact.html">Contact Us</a>
+			  
+		  </li>
+		</ul>
+		
+		<hr/>
+			<form name="contactForm" onsubmit="return validateForm()">
+							
+				<div class="col-4">
+					<label for="formGroupExampleInput"><b>Name</b></label>
+					<input type="text" name="fullname" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
+				</div>
+				<div class="col-4">
+					<label for="formGroupExampleInput"><b>Email</b></label>
+					<input input type="email" name="email" placeholder="Enter Your Email" class="form-control" id="formGroupExampleInput2">
+				</div>
+				<div class="col-4">
+					<label for="formGroupExampleInput"><b>Phone</b></label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="Format: 123-456-7890">
+	<!--				<br><small>Format: 123-456-7890</small>
+	0-->
+				</div>
+
+				<div class="col-4">
+				
+				<label for="reason">
+				Reason for Inquity:
+				</label>
+				
+				<select class="custom-select" >
+				  <option selected>Catering</option>
+				  <option value="1">Private Party</option>
+				  <option value="2">Feedback</option>
+				  <option value="3">Other</option>
+				</select>
+	
+				</div>
+	
+				<div class="col-4">
+					<label for="exampleFormControlTextarea1">Additional Information:</label>
+					<textarea class="form-control" class="col-7" id="exampleFormControlTextarea1" rows="3"></textarea>
+				</div>
+				
+				<div class="col-4">
+					<div class="custom-control custom-radio custom-control-inline">
+						<label>Have you been to the restaurant?</label>
+					</div>
+					<br>
+				<div class="form-check form-check-inline" class="col-7">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+				  <label class="form-check-label" for="inlineRadio1">Yes</label>
+				</div>
+				
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+				  <label class="form-check-label" for="inlineRadio2">No</label>
+				</div>
+				<br>
+			</div>	
+				
+				<div class="col-4">
+				
+					<div class="form-check form-check-inline">
+						<label>Best Days to Contact You:</label></div><br>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+						  <label class="form-check-label" for="inlineCheckbox1">M</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						  <label class="form-check-label" for="inlineCheckbox2">Tues</label>
+						</div>
+						<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						  <label class="form-check-label" for="inlineCheckbox2">Wed</label>
+						</div>
+							<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						  <label class="form-check-label" for="inlineCheckbox2">Th</label>
+						</div>			
+							<div class="form-check form-check-inline">
+						  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						  <label class="form-check-label" for="inlineCheckbox2">Fri</label>
+						</div>			
+				</div>
+
+				<input type="submit" class="btn btn-primary" value="Submit">
+				
+			</form>
+	
+		<hr/>
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+	
+	<footer>
+		<p>
+		13759  David-John Street, Albany, NY, 12210
+		<br>
+		(555) 783-9872
+		</p>
+	</footer>
+</html>
